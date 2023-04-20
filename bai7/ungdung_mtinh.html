@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        fieldset{
+            background-color: brown;
+        }
+        button{
+            background-color: burlywood;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<center>
+<fieldset >
+<form action="">
+
+    <input id="1" type="text">
+    <input id="2" type="text">
+</form>
+<button onclick="A()">Adition(+)</button>
+<button onclick="B()">Subtraction(-)</button>
+<button onclick="C()">Multiplication(X)</button>
+<button onclick="D()">Division(/)</button>
+</fieldset>
+<script>
+function A() {
+    let num1 =+document.getElementById("1").value;
+    let num2=+document.getElementById("2").value;
+    let result;
+    result=num1+num2;
+    alert("tong la "+result);
+}
+function B() {
+    let num1 = +document.getElementById("1").value;
+    let num2 = +document.getElementById("2").value;
+    let hieu;
+    hieu = num1-num2;
+    alert("hieu la " + hieu);
+}
+function C() {
+    let num1 = +document.getElementById("1").value;
+    let num2 = +document.getElementById("2").value;
+    let tich;
+    tich = num1 * num2;
+    alert("tich la " + tich);
+}
+    function D() {
+        let num1 =+document.getElementById("1").value;
+        let num2=+document.getElementById("2").value;
+        let thuong;
+        thuong =num1/num2;
+        alert("thuong la " + thuong);
+}
+</script>
+</center>
+</body>
+</html>
