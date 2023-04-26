@@ -7,9 +7,17 @@
 <body>
 <script>
     let a=+prompt("nhập vào số doanh thu");
-    let b=+prompt("hoa hồng nhận được");
-    if (a>100000000){
-
+    let b;
+    if (a>100000000) {
+        b = a * (5 / 100);
+        alert("hoa hồng nhận được là" + b);
+    }
+    if (a>200000000){
+        b=a * (10/100);
+        alert("hoa hồng nhận được là"+b);
+    }else if (a>300000000){
+        b= a*(15/100);
+        alert("hoa hồng nhận được là"+b);
     }
 </script>
 </body>
